@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Working Contact Form Send To Email Using JS</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="contact">
+      <h2>Contact Me!</h2>
+
+      <form action="#">
+        <div class="input-box">
+          <div class="input-field field">
+            <input
+              type="text"
+              placeholder="Full Name"
+              id="name"
+              class="item"
+              autocomplete="off"
+            />
+            <div class="error">Full Name Can't be blank</div>
+          </div>
+
+          <div class="input-field field">
+            <input
+              type="email"
+              placeholder="Your Email Address"
+              id="email"
+              class="item"
+              autocomplete="off"
+            />
+            <div class="error email">Email Address Required</div>
+          </div>
+        </div>
+
+        <div class="input-box">
+          <div class="input-field field">
+            <input
+              type="text"
+              placeholder="Phone Number"
+              id="phone"
+              class="item"
+              autocomplete="off"
+            />
+            <div class="error phone">Phone Number Required</div>
+          </div>
+
+          <div class="input-field field">
+            <input
+              type="text"
+              placeholder="Subject"
+              id="subject"
+              class="item"
+              autocomplete="off"
+            />
+            <div class="error">Subject Must be Required</div>
+          </div>
+        </div>
+
+        <div class="textarea-field field">
+          <textarea
+            name="message"
+            id="message"
+            cols="30"
+            rows="10"
+            placeholder="Your Message"
+            class="item"
+          ></textarea>
+          <div class="error">Your Message must be required</div>
+        </div>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <!-- cdn link of smtpjs.com -->
+
+    <!-- SIMPLE MAIL TRANSFER PROTOCOL -->
+
+    <!-- An SMTP server is an application or a mail server that uses the SMTP protocol to send, receive, and process email messages. It communicates with other SMTP servers to forward emails from a sender to one or more recipients across the internet. It also prevents spam by using authentication mechanisms that only allow authorized users to deliver emails3. An SMTP server may run different software programs to perform its functions5. -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+    <!-- cdn link for sweetalert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
